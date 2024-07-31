@@ -1,0 +1,63 @@
+POST  http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "first_name": "909090",
+     "last_name": "abeke",
+     "username": "909090",
+     "password": "909090"
+}
+
+###
+POST  http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username":"909090",
+    "password":"909090"
+}
+
+# ###
+# POST  http://localhost:4000/add-product
+
+###
+POST  http://localhost:4000/add-product
+Authorization: berrer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzIxMDM4MzkyLCJleHAiOjE3MjExMjQ3OTJ9.k_1pgqsvvAB7dCgrv-L86hRO3aBkzOB9fmsi0Sa7jvk
+Content-Type: application/json
+
+{"title":"lalalala", "price":"780jfj0", "company":"allmart", "description":"shoes"}
+
+###
+GET  http://localhost:4000/all-products
+
+
+###
+GET  http://localhost:4000/my-product
+Authorization: berrer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzIxMDM4MzkyLCJleHAiOjE3MjExMjQ3OTJ9.k_1pgqsvvAB7dCgrv-L86hRO3aBkzOB9fmsi0Sa7jvk
+
+###
+DELETE   http://localhost:4000/delete-product
+Authorization: berrer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzIxMDM4MzkyLCJleHAiOjE3MjExMjQ3OTJ9.k_1pgqsvvAB7dCgrv-L86hRO3aBkzOB9fmsi0Sa7jvk
+Content-Type: application/json
+
+{ "id": 8 }
+
+###
+POST    http://localhost:4000/mark-as-sold
+Authorization: berrer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzIxMDM4MzkyLCJleHAiOjE3MjExMjQ3OTJ9.k_1pgqsvvAB7dCgrv-L86hRO3aBkzOB9fmsi0Sa7jvk
+Content-Type: application/json
+
+{ "id": 9}
+
+###
+PATCH    http://localhost:4000/update-product
+Authorization: berrer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzIxMDM4MzkyLCJleHAiOjE3MjExMjQ3OTJ9.k_1pgqsvvAB7dCgrv-L86hRO3aBkzOB9fmsi0Sa7jvk
+Content-Type: application/json
+
+{ "id": 10,
+"title": "new product",
+"price":"new price", 
+"company":"new company", 
+"description":"new description"
+}
+
